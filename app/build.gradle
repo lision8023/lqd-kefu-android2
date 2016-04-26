@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.fuwang.kefunotify"
+        minSdkVersion 14
+        targetSdkVersion 23
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    packagingOptions{
+
+        exclude'META-INF/LICENSE.txt'
+        exclude'META-INF/NOTICE.txt'
+        exclude'META-INF/NOTICE'
+        exclude'META-INF/LICENSE'
+        exclude'META-INF/DEPENDENCIES'
+        exclude'META-INF/ASL2.0'
+
+    }
+}
+
+dependencies {
+    compile files('libs/pushservice-4.5.5.77.jar')
+    compile 'com.fuwang.server:common-server-pojo:0.0.47'
+    compile 'com.fuwang.android.common:common-http:0.0.9@aar'
+    compile 'com.fuwang:service-push-rest-pojo:0.0.17-SNAPSHOT'
+    compile 'com.lidroid.xutils:xutils:2.6.13@aar'
+
+
+
+}

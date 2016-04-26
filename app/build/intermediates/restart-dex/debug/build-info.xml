@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="23"
+    density="xhdpi"
+    format="7"
+    timestamp="3275461192961" >
+
+    <task
+        name="javac"
+        duration="1049" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="228" />
+    <task
+        name="verifier"
+        duration="47" />
+
+    <artifact
+        location="C:\Users\win7\StudioProjects\lqd_kefunotify\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="3275461192961" >
+        <artifact
+            location="C:\Users\win7\StudioProjects\lqd_kefunotify\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>
